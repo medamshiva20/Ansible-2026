@@ -1,11 +1,11 @@
-- name: Defining the variables in another playbook and call those in this playbook
+- name: play level variables
   hosts: local
-  vars_files:
-   - course.yaml
   connection: local
+  vars_files:
+  - course.yaml
   tasks:
-   - name: printing the variables
-     vars:
+  - name: print variables
+    vars:
       COURSE: Ansible
-     ansible.builtin.debug:
-      msg: "Course is:{{COURSE}},Trainer is:{{TRAINER}}"
+    ansible.builtin.debug:
+      msg: "Course is: {{ COURSE }}, Trainer is: {{ TRAINER }}"
