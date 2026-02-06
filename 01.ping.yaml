@@ -1,0 +1,5 @@
+- name: Remote manaded node
+  hosts: web
+  tasks:
+   - name: Pinging to remote managed node
+     ansible.builtin.ping:
