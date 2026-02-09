@@ -1,6 +1,7 @@
 ---
 - name: Variables are passed through command line 
   hosts: local
+  connection: local
   tasks:
    - name: Please pass the variables below 
      ansible.builtin.debug:
