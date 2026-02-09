@@ -12,9 +12,10 @@
      private: false
   tasks:
    - name: Please give the variable
-     vars:
-      NAME: Variable from Task level
+    #  vars:
+    #   NAME: Variable from Task level
      ansible.builtin.debug:
       msg: "Hello {{NAME}}"
 
 # 1.args
+# 2.Task
