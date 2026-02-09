@@ -16,3 +16,5 @@
       NAME: Variable from Task level
      ansible.builtin.debug:
       msg: "Hello {{NAME}}"
+
+# 1.args
