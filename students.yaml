@@ -1,0 +1,22 @@
+- name: "Siva Medam"
+  dob: "1999-01-01"
+  mobileNumber: 7981841169
+  addresses:
+  - flatNumber: 104
+    street: "gandhi nagar"
+    city: hyderabad
+    type: current
+  
+  - flatNumber: 104
+    street: "gandhi nagar"
+    city: hyderabad
+    type: perm
+
+- name: "Suresh"
+  dob: "20-070-2000"
+  mobileNumber: 7074841169
+  addresses:
+   - flatNumber: 105
+     street: "Pjr Layout"
+     city: Hyderabad
+     type: current
