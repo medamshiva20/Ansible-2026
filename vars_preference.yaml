@@ -1,0 +1,16 @@
+---
+- name: Proceeding with variable preference
+  hosts: local
+  connection: local
+  vars:
+   NAME: Variable from Play level
+  vars_files:
+   - course.yaml
+  vars_prompt:
+   - name: NAME
+     prompt: Please enter username
+     private: false
+  tasks:
+   - name: Please give the variable
+     vars:
+      NAME: Variable from Task level
