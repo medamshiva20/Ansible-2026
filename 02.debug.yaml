@@ -1,5 +1,6 @@
 - name: Hello World
   hosts: web
+  become: yes
   tasks:
    - name: Hello World
      ansible.builtin.debug:
@@ -7,6 +8,7 @@
 
 - name: PLAY-2
   hosts: local
+  become: yes
   connection: local
   tasks:
    - name: play-2 and task-1 
