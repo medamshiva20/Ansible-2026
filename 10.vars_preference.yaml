@@ -2,8 +2,8 @@
 - name: Proceeding with variable preference
   hosts: local
   connection: local
-  vars:
-   NAME: Variable from Play level
+  # vars:
+  #  NAME: Variable from Play level
   # vars_files:
   #  - course.yaml
   # vars_prompt:
