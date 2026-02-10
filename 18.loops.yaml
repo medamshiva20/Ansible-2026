@@ -1,0 +1,12 @@
+- name: Implement the loops in advanced 
+  hosts: local
+  connection: local
+  tasks:
+   - name: Install the necessary packages 
+     ansible.builtin.package:
+      name: "{{item.name}}"
+      state: "{{item.state}}"
+     loop:
+      - { name: "mysql", state: "absent"}
+      - { name: "nginx", state: "present"}
+      - { name: "zip", state: "absent"}
