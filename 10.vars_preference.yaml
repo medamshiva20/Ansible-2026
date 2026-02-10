@@ -4,8 +4,8 @@
   connection: local
   vars:
    NAME: Variable from Play level
-  vars_files:
-   - course.yaml
+  # vars_files:
+  #  - course.yaml
   vars_prompt:
    - name: NAME
      prompt: Please enter username
