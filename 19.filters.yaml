@@ -7,6 +7,7 @@
    - name: greeting 
      ansible.builtin.debug:
       msg: "Hi Siva,{{Greeting | default('Good Morning')}}"
+      
    - name: convert string to list
      ansible.builtin.debug:
-      msg: "{{topics | split(,)}}"
+      msg: "{{topics | split(,) }}"
