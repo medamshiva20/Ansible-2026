@@ -12,6 +12,6 @@
       msg: "{{users_output}}"
 
    - name: print the ls -ltr output
-     ansible.builtin.command: ls -ltr > file.txt
+    #ansible.builtin.command: ls -ltr > file.txt
+     ansible.builtin.shell: ls -ltr >file.txt
      register: files_output
-     
