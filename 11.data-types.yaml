@@ -8,7 +8,7 @@
    IS_LIVE: true #bool
    DETAILS: #map/dictonary {}
     MONTHS: 4
-    TRAINER: "Siva Medam"
+    TRAINER: Siva Medam
    TOPICS: #list -/[]
     - Linux
     - shell
