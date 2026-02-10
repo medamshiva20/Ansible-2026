@@ -6,10 +6,10 @@
    NAME: Variable from Play level
   # vars_files:
   #  - course.yaml
-  vars_prompt:
-   - name: NAME
-     prompt: Please enter username
-     private: false
+  # vars_prompt:
+  #  - name: NAME
+  #    prompt: Please enter username
+  #    private: false
   tasks:
    - name: Please give the variable
     #  vars:
