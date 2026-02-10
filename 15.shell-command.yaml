@@ -15,3 +15,7 @@
     #ansible.builtin.command: ls -ltr > file.txt
      ansible.builtin.shell: ls -ltr >file.txt
      register: files_output
+
+   - name: print the ls -ltr output in JSON format
+     ansible.builtin.debug:
+      msg: "{{files_output}}"
