@@ -10,4 +10,8 @@
    - name: Dispaly output of the other module in JSON format
      ansible.builtin.debug:
       msg: "{{users_output}}"
+
+   - name: print the ls -ltr output
+     ansible.builtin.command: ls -ltr > file.txt
+     register: files_output
      
