@@ -6,4 +6,8 @@
     #ansible.builtin.command: cat /etc/passwd | grep root
      ansible.builtin.shell: cat /etc/passwd | grep root
      register: users_output
+   
+   - name: Dispaly output of the other module in JSON format
+     ansible.builtin.debug:
+      msg: "{{users_output}}"
      
