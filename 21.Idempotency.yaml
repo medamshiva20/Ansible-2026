@@ -1,0 +1,8 @@
+- name: Create the user with ansible collection module 
+  hosts: local
+  connection: local
+  tasks:
+   - name: create the user
+     ansible.builtin.user:
+      name: Siva
+      password: siva@123
