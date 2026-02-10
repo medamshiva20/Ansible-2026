@@ -3,7 +3,7 @@
   connection: local
   tasks:
    - name: check if the user exist or not 
-     ansible.built.command: id roboshop
+     ansible.builtin.command: id roboshop
      register: user_output
 
    - name: Display the output in JSON file format
